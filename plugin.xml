@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-filepicker"
+        version="1.0.0">
+    <name>FilePicker</name>
+    <description>Cordova File Picker Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova, file picker, plugin</keywords>
+    <engines>
+        <engine name="cordova" version=">=9.0.0" />
+    </engines>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="FilePicker">
+                <param name="android-package" value="com.example.filepicker.FilePicker" />
+            </feature>
+        </config-file>
+        <source-file src="src/android/FilePicker.java" target-dir="src/com/example/filepicker" />
+    </platform>
+    <js-module src="www/filepicker.js" name="FilePicker">
+        <clobbers target="filepicker" />
+    </js-module>
+</plugin>
