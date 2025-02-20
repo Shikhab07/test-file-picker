@@ -1,0 +1,19 @@
+{
+  "name": "cordova-plugin-filepicker",
+  "version": "1.0.0",
+  "description": "Cordova File Picker Plugin",
+  "cordova": {
+    "id": "cordova-plugin-filepicker",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "file picker",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Shikhab07",
+  "license": "Apache-2.0"
+}
